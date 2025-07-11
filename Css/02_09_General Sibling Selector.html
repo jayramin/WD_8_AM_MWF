@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Sibling Selector</title>
+    <style>
+        div+h1 {
+            color: red;
+        }
+
+        /* h1+div {
+            color: blue;
+        } */
+        div~h1 {
+            color: rgb(20, 0, 239);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <!-- <div> -->
+        <h1>General Sibling Selector</h1>
+        <!-- </div> -->
+        <hr>
+        <div>
+            <h1>General Sibling Selector 01</h1>
+            <h1>General Sibling Selector 02</h1>
+            <h1>General Sibling Selector 03</h1>
+            <div>
+                <h1>General Sibling Selector 04</h1>
+                <h1>General Sibling Selector 05</h1>
+                <h1>General Sibling Selector 06</h1>
+            </div>
+            <h1>General Sibling Selector 07</h1>
+            <h1>General Sibling Selector 08</h1>
+            <h1>General Sibling Selector 09</h1>
+            <div>
+                <h1>General Sibling Selector 10</h1>
+                <div>
+                    <h1>General Sibling Selector 11</h1>
+                    <h1>General Sibling Selector 12</h1>
+                </div>
+            </div>
+        </div>
+        <h1>General Sibling Selector 13</h1>
+        <h1>General Sibling Selector 13</h1>
+    </section>
+</body>
+
+</html>

@@ -6,15 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo-Class</title>
     <style>
-        a:active{
-            color: rgb(251, 3, 152);
-        }
-        /* a:visited{
-            color: rgb(15, 251, 3);
-        } */
         a:hover{
             color: red;
         }
+        a:active{
+            color: rgb(251, 3, 152);
+        }
+        a:focus{
+            color: rgb(32, 3, 251);
+        }
+       
+        /* input:focus{
+            border: blue ;
+        } */
+        /* a:visited{
+            color: rgb(15, 251, 3);
+        } */
         h1:hover{
             color: red;
         }
@@ -29,6 +36,9 @@
         <hr>
         <div>
             <a href="#">Pseudo-Class 01</a>
+        </div>
+        <div>
+            <input type="text">
         </div>
     </section>
 </body>
