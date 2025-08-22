@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contaioner {
+  width: 1800px;
+  margin: 0 auto;
+}
+header {
+  background-color: #303030;
+}
+.d-flex {
+  display: flex;
+}
+li {
+  display: inline-block;
+  margin-right: 25px;
+}
+li a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.jsc {
+  justify-content: space-around;
+  /* justify-content: space-evenly; */
+}
+.col-30{
+    width: 25%;
+    /* margin: 0 auto; */
+}
+.alc {
+  align-items: center;
+}
+.tlc{
+    text-align: center;
+}
+/*----------------------------------------------- section-one-start---------------------------------------------------- */
+.sec-one {
+  background-image: url(../Images/sec-one-bg-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* height: 800px; */
+}
+.sec-one-text {
+  color: white;
+  padding: 100px 0;
+}
+.sec-one-text h1 {
+  font-size: 150px;
+  padding-top: 100px;
+}
+.sec-one-text p {
+  padding: 40px 0 20px 0;
+  font-size: 50px;
+  width: 50%;
+}
+.sec-one-text button {
+  background-color: #e8631c;
+  color: white;
+  font-size: 30px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 80px;
+}
+/*----------------------------------------------- section-Two-start---------------------------------------------------- */
+.sec-two {
+  background-color: #e8631c;
+  color: white;
+  padding: 50px 0;
+}
+.card-color {
+  background-color: #303030;
+}
+.card-color h3 {
+font-size: 50px;
+}
+.card-color p {
+font-size: 30px;
+}
+.card-color img {
+width: 100%;
+}
+.sec-two-text h2{
+    font-size: 90px;
+    /* padding: 0 0 30px 0; */
+    padding-bottom: 30px;
+}
+.sec-two-text p{
+    width: 40%;
+    font-size: 30px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}

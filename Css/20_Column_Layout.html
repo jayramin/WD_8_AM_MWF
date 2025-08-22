@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column Layout</title>
+    <style>
+        .d-flex {
+            display: flex;
+            justify-content: space-between
+                /* margin: 0 auto; */
+                /* text-align: center; */
+        }
+
+        .box,
+        section,
+        div {
+            border: 2px solid;
+        }
+
+        .col-50 {
+            /* width: 45%; */
+            width: 50%;
+        }
+
+        .col-30 {
+            /* width: 45%; */
+            /* width: 50%; */
+            width: 30%;
+            /* width: 33.33%; */
+        }
+
+        .col-25 {
+            width: 25%;
+        }
+        .col-70 {
+            width: 70%;
+        }
+        .col-60 {
+            width: 60%;
+        }
+        .col-40 {
+            width: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Column Layout</h1>
+        <hr>
+        <div class="d-flex">
+            <div class="col-50 box">col-50</div>
+            <div class="col-50 box">col-50</div>
+        </div>
+        <div class="d-flex">
+            <div class="col-30 box">col-30</div>
+            <div class="col-30 box">col-30</div>
+            <div class="col-30 box">col-30</div>
+        </div>
+        <div class="d-flex">
+            <div class="col-25 box">col-25</div>
+            <div class="col-25 box">col-25</div>
+            <div class="col-25 box">col-25</div>
+            <div class="col-25 box">col-25</div>
+        </div>
+        <div class="d-flex">
+            <div class="col-30">30% Column</div>
+            <div class="col-70">70% Column</div>
+        </div>
+        <div class="d-flex">
+            <div class="col-60">60% Column</div>
+            <div class="col-40">40% Column</div>
+        </div>
+    </section>
+</body>
+
+</html>

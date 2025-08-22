@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .box {
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            transition: background-color 5s ease, width 5s, font-size 5s;
+            /* transition-duration: 5s;
+            transition-property: background-color,width,font-size;
+            transition-timing-function: ease;
+            transition-delay: 5s; */
+
+        }
+
+        .box:hover {
+            background-color: blue;
+            width: 800px;
+            font-size: 50px;
+        }
+
+        .box-two {
+            background-color: brown;
+            width: 200px;
+            height: 200px;
+            color: white;
+            transition: transform 5s ease;
+        }
+
+        .box-two:hover {
+            background-color: chocolate;
+            /* transform: skewX(-50deg); */
+            /* transform: scaleX(1.5); */
+            /* transform: scaleY(1.5); */
+            /* transform: skewY(-50deg); */
+            transform: rotate(50deg);
+            /* transform: rotateX(50deg) */
+            /* transform: rotateY(50deg) */
+            /* transform: scale(2.2); */
+        }
+
+        .animation {
+            width: 200px;
+            height: 200px;
+            color: white;
+            background-color: forestgreen;
+            animation-name: denish;
+            animation-duration: 10s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            position: relative;
+        }
+
+        @keyframes denish {
+
+            /* from {
+                transform: rotate(50deg);
+            }
+
+            to {
+                transform: rotate(0deg);
+            } */
+            0% {
+                transform: rotate(50deg);
+                left: -200px;
+            }
+
+            25% {
+                transform: rotate(0deg);
+                left: 200px;
+                top: 0;
+            }
+
+            50% {
+                transform: scale(1.2);
+                left: 200px;
+                top: 500px;
+            }
+
+            75% {
+                transform: rotate(20deg);
+                top: 500px;
+                left: 0;
+            }
+
+            100% {
+                transform: rotate(0deg);
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>transition</h1>
+        <div class="box">
+            <h1>transition</h1>
+
+        </div>
+    </section>
+    <section>
+        <h1>transform</h1>
+        <div class="box-two">
+            <h1>Transform</h1>
+
+        </div>
+    </section>
+    <section>
+        <h1>Animation</h1>
+        <div class="animation">
+            <h1>Animation</h1>
+        </div>
+    </section>
+</body>
+
+</html>
